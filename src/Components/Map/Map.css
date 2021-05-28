@@ -1,0 +1,13 @@
+.map-box {
+  display: flex;
+  margin-left: auto;
+}
+.map {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  width: 600px;
+  height: 500px;
+  margin: 1em 0;
+  border-radius: 0.5em;
+}
