@@ -1,20 +1,19 @@
 
 import './App.css';
-import Layout from '../src/Components/Layout/layout';
-
 import '../src/Components/Map/Map.css'
-import Map from './Components/Map/map';
+
+import SimpleMap from '../src/Components/Map/simpleMap';
+
+
 
 function App() {
 
   return (
     <div className="App">
-      <Layout>
-          <div>
+        
+          <SimpleMap />
+       
 
-          <Map  />
-          </div>
-      </Layout>
     </div>
   );
 }
