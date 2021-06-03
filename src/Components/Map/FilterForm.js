@@ -7,27 +7,22 @@ const Filter = () => {
 
   
         const [filterVehicle, setFilterVehicle] = useState({
-            publicTransport: '',
-            motorSharing: '',
-            carSharing: '',
+            publicTransport: [],
+            motorSharing: [],
+            carSharing: [],
         });
-    
-    const gira = [];
-    const subway = [];
-    const bus = [];
-    const train = [];
-    const cooltra= [];
-    const emov = [];
-    
+
     const handleFilterByCar = () => {
         return 
     }
+    
      const handleFilterByPT = () => {
-        return 
+         return
     }
-     const handleFilterByMotorbike = () => {
-        return 
+     const handleFilterByMotorbike = (props) => {
+         return
     }
+    console.log(filterVehicle)
     const TP = ['tren', 'metro', 'bus', 'bike' ];
     const MB = 'Cooltra';
     const EC = 'Emov'
@@ -59,6 +54,7 @@ const Filter = () => {
                         name={EC}
                         value={EC}
                         label={EC}
+                        handleChange={filterVehicle.motorSharing}
                     />
             <button className='filter-button'> Filtrar </button>                   
         </form>
